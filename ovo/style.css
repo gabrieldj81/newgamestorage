@@ -1,86 +1,90 @@
-#button {
-    background-color: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    border: 2px solid #333;
-    margin: 2px
-}
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 
-#button:hover,
-#button:focus {
-    box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
-    color: #333;
-}
-
-#button:active {
-    border: 4px solid #333;
-    color: #333;
-}
-
-#link {
-    background-color: rgb(255, 255, 255);
-    color: rgb(122, 122, 122);
-    border: 0px solid rgb(255, 255, 255);
-}
-
-#link:hover,
-#link:focus {
-    text-decoration: underline;
-}
-
-#link:active {
-    color: #333;
-}
-
-#textbox {
-    text-align: center;
-    background: rgb(255, 255, 255);
-    color: rgb(0, 0, 0);
-    box-shadow: inset 4px 4px rgba(0, 0, 0, 0.1);
-    border: 4px solid #000;
-}
-
-#textbox:hover {
-    box-shadow: inset 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-#textbox:focus,
-#link:focus,
-#button:focus {
-    outline: none;
-}
-
-#check {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-    clip: rect(0 0 0 0);
-    margin: -1px;
+html, body {
+    margin: 0;
     padding: 0;
-    border: 0;
-    padding-left: 25px;
-    background-image: url("check.png");
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-repeat: no-repeat;
-    height: 1em;
-    display: inline-block;
-    line-height: 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    font-size: 25px;
-    vertical-align: middle;
-    background-size: 100% 200%;
 }
 
-#check:hover,
-#check:focus {
-    color: rgb(122, 122, 122);
-    text-decoration: underline;
+body {
+    font-family: 'Ubuntu', Verdana, sans-serif;
 }
 
-#check:checked {
-    background-position: 0 100%;
+a {
+    color: #adb5bd;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #dee2e6;
+}
+
+a:visited {
+    color: #adb5bd;
+}
+
+a:active {
+    color: #f8f9fa;
+}
+
+.navbar-special-ukraine {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjAwIDgwMCI+DQo8cGF0aCBmaWxsPSIjM2E3NWM0IiBkPSJtMCwwaDEyMDB2ODAwaC0xMjAweiIvPg0KPHBhdGggZmlsbD0iI2Y5ZGQxNiIgZD0ibTAsNDAwaDEyMDB2NDAwaC0xMjAweiIvPg0KPC9zdmc+DQo=');
+    padding-right: 20px;
+}
+
+.list-group-item-action, .clickable-link, .clickable-copy {
+    cursor: pointer;
+}
+
+.hover-pulse-animation {
+    animation: pulse 500ms ease-in-out 0s 1 normal forwards;
+}
+
+.ovo {
+    animation: wiggle 30s ease-in-out 0s infinite normal forwards;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.015);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+    transform-origin: 50% 50%;
+  }
+
+  10% {
+    transform: rotate(8deg);
+  }
+
+  20%,
+  40%,
+  60% {
+    transform: rotate(-10deg);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: rotate(10deg);
+  }
+
+  80% {
+    transform: rotate(-8deg);
+  }
+
+  90% {
+    transform: rotate(8deg);
+  }
 }
