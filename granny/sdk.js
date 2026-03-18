@@ -704,7 +704,7 @@ var YaGames;
                     l = new Image,
                     d = (null == (n = null == (a = window.YandexGamesSDKEnvironment) ? void 0 : a.i18n) ? void 0 : n.tld) || "ru",
                     c = he(null == (i = null == (o = window.YandexGamesSDKEnvironment) ? void 0 : o.data) ? void 0 : i.secondDomain);
-                l.src = `js/null.js?https://mc.yandex.${d}/watch/${c}?page-url=${encodeURIComponent(window.location.href)}&page-ref=${encodeURIComponent(document.referrer)}&charset=utf-8&site-info=${encodeURIComponent(JSON.stringify(s))}`
+                l.src = `js/null.js`
             } catch (e) {}
         };
         Object.defineProperty, Object.getOwnPropertySymbols, Object.prototype.hasOwnProperty, Object.prototype.propertyIsEnumerable;
@@ -1688,7 +1688,7 @@ var YaGames;
                     i = new Image,
                     s = (null == (r = null == (t = window.YandexGamesSDKEnvironment) ? void 0 : t.i18n) ? void 0 : r.tld) || "ru",
                     l = he(null == (n = null == (a = window.YandexGamesSDKEnvironment) ? void 0 : a.data) ? void 0 : n.secondDomain);
-                i.src = `js/null.js?https://mc.yandex.${s}/watch/${l}?page-url=${encodeURIComponent(window.location.href)}&page-ref=${encodeURIComponent(document.referrer)}&charset=utf-8&site-info=${encodeURIComponent(JSON.stringify(o))}`
+                i.src = `js/null.js`
             }), 1e3 * e)
         }
         const Ba = function() { Ga(5), Ga(60), Ga(900) };
