@@ -1,0 +1,131 @@
+﻿<html>
+<head>
+<title>Game Logic</title>
+<style>
+#293291 {
+    position: absolute;
+    bottom: 0;
+}
+/* Style the video to cover the entire background */
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensure the video is behind other content */
+}
+
+/* Style the content over the video */
+.content {
+    position: relative;
+    z-index: 1;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+$gray: #bbbbbb;
+* {  font-family: 'Roboto', sans-serif;}
+
+.container {  position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -65px;
+    margin-top: -20px;
+    width: 130px;
+    height: 40px;
+    text-align: center;
+}
+
+.img {
+  left: 20%;
+  width: 80%;
+  height: 30%;
+}
+
+.logo:hover{
+ cursor: url('res/pointer.png'), auto;
+}
+
+.button {
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 10px;
+    padding: 12px 18px;
+    border-radius: 4px;
+}
+.button3 {
+    background-color: red;
+    transition: transform 0.5s ease;
+}
+
+.button3:hover {
+    transform: translateY(-5px);
+    color: black;
+}
+</style>
+</head>
+<center>
+<div class="video-wrapper">
+   <img id="bgVideo" style="content-fit: contained" src="res/background.png"></img>
+</div>
+<div class="title">
+<image src="res/title2.png"></image>
+</div>
+<div class="content"> 
+<button class="button button3"><a  style="text-decoration: none; color: black;" href="hl1/index.html">Half Life</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="minecraft.html">Minecraft</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="sm64/index.html">SM64</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="smb/index.html">Super Mario Bros</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="nzp/index.html">Call of Duty: Zombies</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="tetris.html">Tetris</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="dino/index.html">Chrome Dino Game</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="superhot/index.html">Super Hot</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="invaders/index.html">Space Invaders</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="baldi/index.html">Baldi's Basics</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="quake/index.html">Quake</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="pacman/index.html">PacMan</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="hexgl/index.html">HexGL</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="marble/index.html">Marble Blast Ultra</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="lol/index.html">1v1.LOL</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="bitlife/index.html">BitLife</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="slope/index.html">Slope</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="thereisnogame/index.html">THERE IS NO GAME!</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="snowrider3d/index.html">Snow Rider</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="cookie-clicker/index.html">Cookie Clicker</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="crossy-road/index.html">Crossy Road</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="doom2/index.html">Doom</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="quake3/index.html">Snow Rider</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="subway-surfers/index.html">Subway Surfers</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="quake3/game.html">Quake 3</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="/open/">Open House</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="killbaby/index.html">Kill The Ice Age Baby</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="mc3/index.html">Madness Combat 3d: Fueled By Hotdogs</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="halone/index.html">Home Alone</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="bb/index.html">Burgers and Frights</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="dreader/index.html">Dreader</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="tomb/index.html">Tomb of the Mask</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="nsmbds/index.html">New Super Bros DS Deluxe</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="arsonate/index.html">Arsonate</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="redhand/index.html">Red Handed</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="rush/index.html">Rush</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="granny/index.html">Granny</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="ctr/index.html">Cut The Rope</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="fnf/index.html">Friday Night Funkin</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="fruitninja/index.html">Fruit Ninja</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="bowl/index.html">Retro Bowl</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="ovo/index.html">OvO</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="fnaf/index.html">FNAF</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="fnaf2/index.html">FNAF 2</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="fnaf3/index.html">FNAF 3</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="fnaf4/index.html">FNAF 4</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="wipeout/index.html">wipEout</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="cookie2/index.html">Cookie Clicker 2</a></button>
+<button class="button button3"><a style="text-decoration: none; color: black;" href="irori/index.html">irori</a></button>
+</div>
+</center>
+</html>
