@@ -6,8 +6,8 @@
     <title>Unity WebGL Player | ULTRAKILL WEB PORT</title>
   </head>
   <body style="text-align: center; padding: 0; border: 0; margin: 0;">
-    <canvas id="unity-canvas" width=1280 height=720 style="width: 1280px; height: 720px; background: #231F20"></canvas>
-    <script src="Build/ultrakill.loader.js"></script>
+    <canvas id="unity-canvas" width=1280 height=720 tabindex="-1" style="width: 1280px; height: 720px; background: #231F20"></canvas>
+    <script src="Build/build.loader.js"></script>
     <script>
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
@@ -25,13 +25,13 @@
       }
 
       createUnityInstance(document.querySelector("#unity-canvas"), {
-        dataUrl: "Build/ultrakill.data.unityweb",
-        frameworkUrl: "Build/ultrakill.framework.js.unityweb",
-        codeUrl: "Build/ultrakill.wasm.unityweb",
+        dataUrl: "Build/build.data.unityweb",
+        frameworkUrl: "Build/build.framework.js.unityweb",
+        codeUrl: "Build/build.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
-        companyName: "Hakita",
+        companyName: "Hakita and Cake Logic",
         productName: "ULTRAKILL WEB PORT",
-        productVersion: "1.5",
+        productVersion: "1.4",
         // matchWebGLToCanvasSize: false, // Uncomment this to separately control WebGL canvas render size and DOM element size.
         // devicePixelRatio: 1, // Uncomment this to override low DPI rendering on high DPI displays.
       });
